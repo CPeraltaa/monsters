@@ -4,7 +4,7 @@ pipeline {
         stage("Tests") {
             steps {
                 sh "sudo npm install"
-                sh "sudo CI=true npm test npm test"
+                sh "sudo CI=true npm test"
             }
         }
         stage("Build"){
